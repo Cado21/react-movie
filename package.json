@@ -7,7 +7,6 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "axios": "^1.4.0",
-    "query-string": "^8.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
@@ -20,6 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "yarn build && yarn firebase deploy",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -40,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "firebase-tools": "^12.4.8"
   }
 }
