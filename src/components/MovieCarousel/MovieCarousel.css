@@ -1,0 +1,112 @@
+.Carousel {
+  height: calc(400px + 36px);
+  /*Height = Carousel .swiper-slide  + .Carousel .swiper-pagination */
+}
+/* Swiper Styles */
+.Carousel .swiper-slide {
+  width: 80vw;
+  height: 400px;
+}
+
+.Carousel .swiper-wrapper>div:first-child {
+  padding-left: 36px;
+}
+
+.Carousel .swiper-wrapper>div:last-child {
+  padding-right: 36px;
+}
+.Carousel .swiper {
+  overflow-y: visible;
+}
+
+.Carousel .swiper-pagination {
+  bottom: -36px !important;
+}
+
+.Carousel .swiper-pagination-bullet {
+  background-color: var(--grey);
+}
+
+.Carousel .swiper-pagination-bullet-active {
+  background-color: var(--white);
+}
+/* Swiper styles -- END -- */
+
+.carousel-content {
+  cursor: pointer;
+  background-color: var(--blackSecondary);
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  transition: all 0.2s ease;
+}
+.carousel-content:hover {
+  transform: scale(1.04);
+}
+.content-img {
+  width: 50%;
+  height: 100%;
+}
+
+.content-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-content .content {
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1 {
+  height: fit-content;
+  padding-bottom: 8px;
+}
+.content p {
+  height: 100%;
+  display: flex;
+  overflow-y: scroll;
+  padding-right: 8px;
+}
+
+.content p::-webkit-scrollbar {
+  width: 10px;
+  background: var(--black); 
+  border-radius: 0 5px 5px 0;
+}
+
+.content p::-webkit-scrollbar-thumb {
+  background: var(--grey); 
+  border-radius: 10px;
+}
+
+
+.content-padding {
+  padding: 20px;
+}
+
+
+.skeleton-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: scroll;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.carousel-skeleton {
+  width: 100%;
+}

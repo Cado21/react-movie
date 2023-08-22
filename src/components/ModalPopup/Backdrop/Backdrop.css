@@ -1,0 +1,40 @@
+.Backdrop {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+.Backdrop-enter-active {
+  animation: enterAnimation 0.2s ease-out forwards;
+}
+
+.Backdrop-exit-active {
+  animation: exitAnimation 0.2s ease-out forwards;
+}
+
+@keyframes enterAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes exitAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

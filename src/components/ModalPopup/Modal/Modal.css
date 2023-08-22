@@ -1,0 +1,36 @@
+.Modal {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+}
+
+.Modal-enter-active {
+  animation: enterAnimation 0.2s ease-out forwards;
+}
+
+.Modal-exit-active {
+  animation: exitAnimation 0.2s ease-out forwards;
+}
+
+
+
+@keyframes enterAnimation {
+  0% {
+    opacity: 0; 
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes exitAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

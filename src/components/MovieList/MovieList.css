@@ -1,0 +1,37 @@
+.MovieList .headerText {
+  margin-left: 24px;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+
+/* Swiper Styles */
+.MovieList .swiper-wrapper {
+  width: 100%;
+  padding: 20px 0;
+}
+/* 
+.MovieList .swiper-wrapper > div:first-child {
+  padding-left: 30px;
+}
+
+.MovieList .swiper-wrapper > div:last-child {
+  padding-right: 30px;
+} */
+/* .MovieList .swiper {
+  overflow-y: visible;
+}
+
+.MovieList .swiper-pagination {
+  bottom: -30px !important;
+}
+
+.MovieList .swiper-pagination-bullet {
+  background-color: var(--grey);
+}
+
+.MovieList .swiper-pagination-bullet-active {
+  background-color: var(--white);
+} */
+/* Swiper styles -- END -- */

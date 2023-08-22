@@ -1,0 +1,74 @@
+#logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  min-height: 100vh;
+
+  padding-bottom: 180px;
+}
+
+
+.movie-detail-container {
+  width: 70vw;
+  height: 100%;
+  min-height: 80vh;
+  border-radius: 8px 8px 0 8px;
+  padding: 18px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: var(--black);
+  border: 1px solid var(--greySecondary);
+}
+
+.movie-detail-container .close-icon {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  float: right;
+  border-radius: 50%;
+  border: 1px solid var(--grey);
+  background-color: var(--black);
+  padding: 8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.close-icon:hover {
+  background-color: var(--grey);
+}
+.close-icon:hover path {
+  color: var(--black);
+}
+
+.movie-detail-container::-webkit-scrollbar {
+  width: 10px;
+  background: var(--black); 
+  border-radius: 0 5px 5px 0;
+}
+
+.movie-detail-container::-webkit-scrollbar-thumb {
+  background: var(--grey); 
+  border-radius: 10px;
+}
+
+.video-player-container {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+  
+.video-player-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-detail-content {
+  padding-top: 40px;
+}
